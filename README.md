@@ -8,18 +8,17 @@ A professional-grade **Task Management System** built with **Flutter 3.27+**. Th
 
 ---
 
-## 📸 Application Preview
+### 📸 App Showcases
 
 
-| 🏠 Home Interface | 📋 Task Management |
-| :---: | :---: |
-| ![Main Screen](assets/images/main.png) | ![Task List](assets/images/task_list.png) |
-
-| 🔍 Real-time Search | 🗑️ Secure Delete Alert |
-| :---: | :---: |
-| ![Search Filter](assets/images/search_filter.png) | ![Delete Task](assets/images/delete_task.png) |
+| 🏠 Home | 📋 Tasks | 🔍 Search | 🗑️ Delete |
+| :---: | :---: | :---: | :---: |
+| <img src="assets/images/main.png.png" width="200"> | <img src="assets/images/task_list.png.png" width="200"> | <img src="assets/images/search_filter.png.png" width="200"> | <img src="assets/images/delete_task.png.png" width="200"> |
 
 ---
+
+
+
 
 ## 🚀 Key Features
 
