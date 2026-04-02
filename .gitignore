@@ -1,0 +1,54 @@
+# --- IDEs and Editors ---
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.history
+.buildlog/
+.DS_Store
+Thumbs.db
+
+# --- Flutter/Dart ---
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+build/
+coverage/
+**/doc/api/
+.packages
+
+# --- Android ---
+.gradle/
+local.properties
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+**/android/sdk.dir
+*.jks
+*.keystore
+*.apk
+*.aab
+
+# --- iOS ---
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Pods/
+*.moved-aside
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+**/Payload/
+
+# --- Secrets and Environments ---
+.env
+.env.*
+secrets.json
+
+# --- Miscellaneous ---
+*.log
+*.temp
+*.tmp
