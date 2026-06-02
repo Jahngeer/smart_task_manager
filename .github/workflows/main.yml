@@ -8,12 +8,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write # Yeh line GitHub ko release create karne ki ijazat deti hai
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # Java aur Flutter Setup Steps (Pehle wale)
       - name: Set up Java
         uses: actions/setup-java@v4
         with:
@@ -28,16 +29,18 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
+      # APK Build Karna
       - name: Build APK
-        run: flutter build apk --release
+        run: flutter build apk --release # Release build banayein
 
+      # TOKEN TESTING STEP: Built-in GITHUB_TOKEN use kar ke APK ko release mein upload karna
       - name: Create GitHub Release and Upload APK
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v1.0.${{ github.run_number }}
+          tag_name: v1.0.${{ github.run_number }} # Har push par naya version auto banega
           name: Release v1.0.${{ github.run_number }}
           draft: false
           prerelease: false
           files: build/app/outputs/flutter-apk/app-release.apk
         env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }} # Yeh line aapke website wale token ko auto-fetch karegi!
+          GITHUB_TOKEN: ${{ secrets.TOKEN }} # Yeh hai aapka built-in token!
